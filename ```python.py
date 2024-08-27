@@ -5,7 +5,6 @@ graph = defaultdict(dict)
 def add_edge(u, v, weight):
     graph[u][v] = weight
     graph[v][u] = weight
-
 def bfs(start):
     visited = set()
     q = deque()
